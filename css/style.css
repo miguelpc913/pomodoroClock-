@@ -1,0 +1,19 @@
+button{
+ margin:10px;
+}
+
+.num{
+  margin:10px;
+}
+
+body{
+  font-family: 'Lobster', cursive;
+}
+
+
+
+@media(max-width:630px){
+  img{
+    display:none;
+  }
+}
