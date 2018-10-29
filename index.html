@@ -4,71 +4,60 @@
 <head>
   <meta charset="UTF-8">
   <title>pomodoro clock</title>
-  
-  
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
-
-      <link rel="stylesheet" href="css/style.css">
-
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   
 </head>
 
-<body>
+<body class="bg-dark text-white">
 
-  <body class="bg-dark text-white">
-  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   <audio id="buzzer" src="http://codingtutorials360.com/14244764.mp3" type="audio/mpeg"></audio>
-  
-  
-  <h1 class="text-center mt-4">Pomodoro Clock</h1>
-  <div class="row">
-    <div class="col">
-      <h1 class="text-center " id="breakTitle">Break Time</h1>
-    </div>
-        <div class="col">
-     
-    </div>
-    <div class="col">
-      <h1 class="text-center" id="sessionTitle"> Session Time</h1>
-    </div>
-  </div>
+  <div class="container">
+    <h1 class="text-center mt-4">Pomodoro Clock</h1>
 
-<div class="row">
+    <div class="row text-center clock">
+
+        <div class="col text-center" id="breakSpace">
+          <h1 id="breakTitle">Break Time</h1>
+           <div class="btn-group mt-3 clock">
+            <button class="btn btn-primary minusBtn clockBtn">-</button>
+            <h2 id="break" class="counter">5</h2>
+            <button class="btn btn-primary plusBtn clockBtn">+</button>
+          </div>
+        </div>
+
+        <div class="col text-center" id="imageSpace">
+          <img src="https://lh3.googleusercontent.com/Q-TyP-0iMexxAQDt7N81PLjLCrkoBkZVuSxP_1laOHxmctHhwJKsOXC9DYeBGXs8NIM=w300">
+        </div>
+
+        <div class="col text-center" id="sessionSpace">
+          <h1 class="text-center" id="sessionTitle">Session Time</h1>
+          <div class="btn-group mt-3 clock">
+           <button class ="btn btn-primary minusBtn clockBtn">-</button>
+           <h2 id="session" class="counter">5</h2>
+           <button class="btn btn-primary plusBtn clockBtn">+</button>
+          </div>
+        </div>
+      </div>
+
+      
+
+
+
   
-  
-   <div class="col text-center">
-     <div class="btn-group mt-3 ">
-       <button class ="btn btn-primary" id="break-">-</button>
-       <h2 id="break" class="num">5</h2>
-       <button href="#" class= "btn btn-primary" id="breakplus">+</button>
+
+    
+      <div class="col-12 text-center mt-5"> 
+        <button class="btn btn-primary" id="start">Start</button>
+        <button class="btn btn-primary" id="reset">Reset</button>
+        <button class="btn btn-primary" id="stop">Stop</button>
+        <button class="btn btn-primary" id="resume">Resume</button>
+        <button class="btn btn-primary" id="takeBreak">Take a Break</button>
       </div>
     </div>
-<div class="col text-center">    
-<img src="https://lh3.googleusercontent.com/Q-TyP-0iMexxAQDt7N81PLjLCrkoBkZVuSxP_1laOHxmctHhwJKsOXC9DYeBGXs8NIM=w300">
-  </div>
-    <div class="col text-center">
-      <div class="btn-group mt-3 wrapper">
-        <button class="btn btn-primary" id="session-">-</button>
-        <h2 id="session" class="num">5</h2>
-        <button class="btn btn-primary" id="sessionplus">+</button>
-      </div>
-    </div> 
-  
-  
-</div>
-  
-  <div class="text-center mt-5"> 
-    <button class="btn btn-primary" id="reset">Reset</button>
-    <button class="btn btn-primary" id="start">Start</button>
-    <button class="btn btn-primary" id="stop">Stop</button>
-    <button class="btn btn-primary" id="resume">Resume</button>
-</div>
 </body>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-
-  
-
-    <script  src="js/index.js"></script>
+    <script  src="js/index2.js"></script>
 
 
 
